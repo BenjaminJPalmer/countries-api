@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/styles.css">
+    <script defer src="dist/all.js"></script>
+    <title>Countries API</title>
+</head>
+<body>
+    <nav class="d-flex justify-content-between">
+        <h1 class="text-primary m-4 fw-bold">Where in the world?</h1>
+        <div class="text-primary m-4 fw-light">Switch</div>
+    </nav>
+    <main class="bg-light">
+        <div id="inputs" class="d-flex justify-content-between">
+            <input class="m-4" type="text" name="country-input" id="country-input" placeholder="Search for a country..." aria-label="Search for a country">
+            <select class="m-4 p-1" name="filter" id="filter">
+                <option value="" disabled selected aria-label="Filter by Region">Filter by Region</option>
+                <option value="Africa">Africa</option>
+                <option value="America">America</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+            </select>
+        </div>
+        <section id="cards" class="d-grid m-5">
+            <div id="card bg-white">
+                <img src="" alt="" class="flag" id="flag" width="150" height="150">
+                <div class="card-content">
+                    <h4 id="country-name" class="fw-bold mb-0">Germany</h4>
+                    <p><span class="fw-bold">Population: </span><span id="country-population" >81,7770,900</span></p>
+                    <p><span class="fw-bold">Region: </span><span id="country-region">Europe</span></p>
+                    <p><span class="fw-bold">Capital: </span><span id="country-capital">Berlin</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="src/scripts/app.js"></script>
+</body>
+</html>

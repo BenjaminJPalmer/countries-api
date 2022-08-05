@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Frontend Mentor countries API project",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass -w src/styles/styles.scss dist/styles.css"
   },
   "repository": {
     "type": "git",
@@ -17,7 +19,9 @@
   },
   "homepage": "https://github.com/BenjaminJPalmer/countries-api#readme",
   "dependencies": {
-    "bootstrap": "^5.2.0"
+    "@fortawesome/fontawesome-free": "^6.1.1",
+    "bootstrap": "^5.2.0",
+    "node-fetch": "^3.2.9"
   },
   "devDependencies": {
     "sass": "^1.53.0"
